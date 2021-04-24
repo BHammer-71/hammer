@@ -12,9 +12,17 @@
   "npmScope": "hammer",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "N2ViYjY4MjItM2ViNy00NTc5LWE4OWMtOTFkMTk1NWRmZjdlfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -24,7 +32,9 @@
     },
     "vphoa-e2e": {
       "tags": [],
-      "implicitDependencies": ["vphoa"]
+      "implicitDependencies": [
+        "vphoa"
+      ]
     },
     "api": {
       "tags": []
