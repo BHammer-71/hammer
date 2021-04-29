@@ -21,12 +21,7 @@
     "vphoa-e2e": { "tags": [], "implicitDependencies": ["vphoa"] },
     "api": { "tags": [] },
     "api-interfaces": { "tags": [] },
-    "shared-angular-ui": { "tags": [] },
-    "shared-angular-feature": { "tags": [] },
-    "shared-angular-util": { "tags": [] },
-    "shared-angular-data-access": { "tags": [] },
-    "shared-nest-data-access": { "tags": [] },
-    "shared-nest-util": { "tags": [] },
-    "shared-nest-feature": { "tags": [] }
+    "vphoa-auth": { "tags": [] },
+    "vphoa-features": { "tags": [] }
   }
 }

@@ -16,20 +16,12 @@
     "baseUrl": ".",
     "paths": {
       "@hammer/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@hammer/shared/angular/ui": ["libs/shared/angular/ui/src/index.ts"],
-      "@hammer/shared/angular/feature": [
-        "libs/shared/angular/feature/src/index.ts"
-      ],
-      "@hammer/shared/angular/util": ["libs/shared/angular/util/src/index.ts"],
-      "@hammer/shared/angular/data-access": [
-        "libs/shared/angular/data-access/src/index.ts"
-      ],
-      "@hammer/shared/nest/data-access": [
-        "libs/shared/nest/data-access/src/index.ts"
-      ],
-      "@hammer/shared/nest/util": ["libs/shared/nest/util/src/index.ts"],
-      "@hammer/shared/nest/feature": ["libs/shared/nest/feature/src/index.ts"]
+      "@hammer/vphoa/auth": ["libs/vphoa/auth/src/index.ts"],
+      "@hammer/vphoa/features": ["libs/vphoa/features/src/index.ts"]
     }
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true
   },
   "exclude": ["node_modules", "tmp"]
 }

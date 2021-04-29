@@ -207,164 +207,51 @@
         }
       }
     },
-    "shared-angular-ui": {
+    "vphoa-auth": {
       "projectType": "library",
-      "root": "libs/shared/angular/ui",
-      "sourceRoot": "libs/shared/angular/ui/src",
+      "root": "libs/vphoa/auth",
+      "sourceRoot": "libs/vphoa/auth/src",
       "prefix": "hammer",
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/shared/angular/ui/src/**/*.ts",
-              "libs/shared/angular/ui/src/**/*.html"
+              "libs/vphoa/auth/src/**/*.ts",
+              "libs/vphoa/auth/src/**/*.html"
             ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/shared/angular/ui"],
+          "outputs": ["coverage/libs/vphoa/auth"],
           "options": {
-            "jestConfig": "libs/shared/angular/ui/jest.config.js",
+            "jestConfig": "libs/vphoa/auth/jest.config.js",
             "passWithNoTests": true
           }
         }
       }
     },
-    "shared-angular-feature": {
+    "vphoa-features": {
       "projectType": "library",
-      "root": "libs/shared/angular/feature",
-      "sourceRoot": "libs/shared/angular/feature/src",
+      "root": "libs/vphoa/features",
+      "sourceRoot": "libs/vphoa/features/src",
       "prefix": "hammer",
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/shared/angular/feature/src/**/*.ts",
-              "libs/shared/angular/feature/src/**/*.html"
+              "libs/vphoa/features/src/**/*.ts",
+              "libs/vphoa/features/src/**/*.html"
             ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/shared/angular/feature"],
+          "outputs": ["coverage/libs/vphoa/features"],
           "options": {
-            "jestConfig": "libs/shared/angular/feature/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "shared-angular-util": {
-      "projectType": "library",
-      "root": "libs/shared/angular/util",
-      "sourceRoot": "libs/shared/angular/util/src",
-      "prefix": "hammer",
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "libs/shared/angular/util/src/**/*.ts",
-              "libs/shared/angular/util/src/**/*.html"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/shared/angular/util"],
-          "options": {
-            "jestConfig": "libs/shared/angular/util/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "shared-angular-data-access": {
-      "projectType": "library",
-      "root": "libs/shared/angular/data-access",
-      "sourceRoot": "libs/shared/angular/data-access/src",
-      "prefix": "hammer",
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "libs/shared/angular/data-access/src/**/*.ts",
-              "libs/shared/angular/data-access/src/**/*.html"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/shared/angular/data-access"],
-          "options": {
-            "jestConfig": "libs/shared/angular/data-access/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "shared-nest-data-access": {
-      "root": "libs/shared/nest/data-access",
-      "sourceRoot": "libs/shared/nest/data-access/src",
-      "projectType": "library",
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/shared/nest/data-access/**/*.ts"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/shared/nest/data-access"],
-          "options": {
-            "jestConfig": "libs/shared/nest/data-access/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "shared-nest-util": {
-      "root": "libs/shared/nest/util",
-      "sourceRoot": "libs/shared/nest/util/src",
-      "projectType": "library",
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/shared/nest/util/**/*.ts"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/shared/nest/util"],
-          "options": {
-            "jestConfig": "libs/shared/nest/util/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "shared-nest-feature": {
-      "root": "libs/shared/nest/feature",
-      "sourceRoot": "libs/shared/nest/feature/src",
-      "projectType": "library",
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/shared/nest/feature/**/*.ts"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/shared/nest/feature"],
-          "options": {
-            "jestConfig": "libs/shared/nest/feature/jest.config.js",
+            "jestConfig": "libs/vphoa/features/jest.config.js",
             "passWithNoTests": true
           }
         }
