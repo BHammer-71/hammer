@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Authenticate } from '@hammer/shared/data-access';
 
 @Component({
   selector: 'hammer-login-form',
   templateUrl: './login-form.component.html',
   styleUrls: ['./login-form.component.css']
 })
-export class LoginFormComponent implements OnInit {
+export class LoginFormComponent {
+  @Output() process = new EventEmitter<Authenticate>();
 
-  constructor() { }
-
-  ngOnInit(): void {
+  login(authenticate: Authenticate) {
+    this.process.emit(authenticate);
   }
 
 }

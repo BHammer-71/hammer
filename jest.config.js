@@ -4,5 +4,8 @@ module.exports = {
     '<rootDir>/apps/api',
     '<rootDir>/libs/vphoa/auth',
     '<rootDir>/libs/vphoa/features',
+    '<rootDir>/libs/shared/data-access',
+    '<rootDir>/libs/vphoa/ui',
+    '<rootDir>/libs/vphoa/vphoa-feature-shell',
   ],
 };

@@ -22,6 +22,9 @@
     "api": { "tags": [] },
     "api-interfaces": { "tags": [] },
     "vphoa-auth": { "tags": [] },
-    "vphoa-features": { "tags": [] }
+    "vphoa-features": { "tags": [] },
+    "shared-data-access": { "tags": ["scope:shared"] },
+    "vphoa-ui": { "tags": [] },
+    "vphoa-feature-shell": { "tags": [] }
   }
 }

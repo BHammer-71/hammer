@@ -17,7 +17,12 @@
     "paths": {
       "@hammer/api-interfaces": ["libs/api-interfaces/src/index.ts"],
       "@hammer/vphoa/auth": ["libs/vphoa/auth/src/index.ts"],
-      "@hammer/vphoa/features": ["libs/vphoa/features/src/index.ts"]
+      "@hammer/vphoa/features": ["libs/vphoa/features/src/index.ts"],
+      "@hammer/shared/data-access": ["libs/shared/data-access/src/index.ts"],
+      "@hammer/vphoa/ui": ["libs/vphoa/ui/src/index.ts"],
+      "@hammer/vphoa/vphoa-feature-shell": [
+        "libs/vphoa/vphoa-feature-shell/src/index.ts"
+      ]
     }
   },
   "angularCompilerOptions": {

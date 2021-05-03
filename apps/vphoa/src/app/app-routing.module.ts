@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 /** BEGIN components linked to this router */
 import { vphoaAuthRoutes, VphoaAuthModule } from '@hammer/vphoa/auth'
-// import { FeaturesModule } from '@hammer/vphoa/features';
 /** END components linked to this router */
 
 const routes: Routes = [
@@ -11,17 +10,16 @@ const routes: Routes = [
     path: 'auth',
     children: vphoaAuthRoutes
   },
+
+
   /** EMPTY PATH ROUTE */
-  /*
+
   {
     path: '',
+    redirectTo: 'home',
     pathMatch: 'full',
-    loadChildren: () =>
-      import('@hammer/vphoa/home-page').then(
-        (module) => module.VphoaHomePageModule
-      ),
   },
-  */
+
   /** WILDCARD ROUTES */
 
 ];
@@ -30,7 +28,6 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(
       routes,
-      { initialNavigation: 'enabledBlocking' }
     ),
     VphoaAuthModule,
   ],

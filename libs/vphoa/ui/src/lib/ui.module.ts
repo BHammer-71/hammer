@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home.component';
+import { ContactsListComponent } from './contacts-list/contacts-list.component';
 
 @NgModule({
   imports: [CommonModule],
   declarations: [
-    HomeComponent
+    ContactsListComponent
   ],
   exports: [
-    HomeComponent
+    ContactsListComponent
   ],
 })
-export class FeaturesModule {}
+export class UiModule {}
