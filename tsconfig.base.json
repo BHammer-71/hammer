@@ -22,7 +22,8 @@
       "@hammer/vphoa/ui": ["libs/vphoa/ui/src/index.ts"],
       "@hammer/vphoa/vphoa-feature-shell": [
         "libs/vphoa/vphoa-feature-shell/src/index.ts"
-      ]
+      ],
+      "@hammer/shared/material": ["libs/shared/material/src/index.ts"]
     }
   },
   "angularCompilerOptions": {

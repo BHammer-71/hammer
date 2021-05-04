@@ -25,6 +25,7 @@
     "vphoa-features": { "tags": [] },
     "shared-data-access": { "tags": ["scope:shared"] },
     "vphoa-ui": { "tags": [] },
-    "vphoa-feature-shell": { "tags": [] }
+    "vphoa-feature-shell": { "tags": [] },
+    "shared-material": { "tags": [] }
   }
 }

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 /* Routing Module */
 // import { AppRoutingModule } from './app-routing.module';
 /* Angular Modules */
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 // import { HttpClientModule } from '@angular/common/http';
 /* Feature modules */
 // import { FeatureHomeModule } from '@hammer/vphoa/features';
@@ -20,6 +22,7 @@ import { VphoaFeatureShellModule} from '@hammer/vphoa/vphoa-feature-shell'
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     VphoaFeatureShellModule,
     // HttpClientModule,
     // AppRoutingModule,
