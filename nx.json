@@ -17,15 +17,15 @@
     }
   },
   "projects": {
-    "vphoa": { "tags": [] },
+    "vphoa": { "tags": ["scope:app"] },
     "vphoa-e2e": { "tags": [], "implicitDependencies": ["vphoa"] },
-    "api": { "tags": [] },
-    "api-interfaces": { "tags": [] },
-    "vphoa-auth": { "tags": [] },
-    "vphoa-features": { "tags": [] },
+    "api": { "tags": ["scope:app"] },
+    "api-interfaces": { "tags": ["scope:api"] },
+    "vphoa-auth": { "tags": ["scope:feature"] },
+    "vphoa-features": { "tags": ["scope:features"] },
     "shared-data-access": { "tags": ["scope:shared"] },
-    "vphoa-ui": { "tags": [] },
-    "vphoa-feature-shell": { "tags": [] },
-    "shared-material": { "tags": [] }
+    "vphoa-ui": { "tags": ["scope:shared"] },
+    "vphoa-feature-shell": { "tags": ["scope:app"] },
+    "shared-material": { "tags": ["scope:shared"] }
   }
 }

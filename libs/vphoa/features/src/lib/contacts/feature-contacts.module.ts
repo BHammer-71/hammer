@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactsComponent } from './contacts/contacts.component';
-import { UiModule } from '@hammer/vphoa/ui'
-
+import { UiModule } from '@hammer/vphoa/ui';
+import { ContactsComponent } from './contacts.component';
 
 const routes: Routes=[
   {
@@ -20,6 +19,6 @@ const routes: Routes=[
     RouterModule.forChild(routes),
     UiModule,
   ],
-  exports: [ContactsComponent],
+  exports: [ContactsComponent, UiModule],
 })
 export class FeatureContactsModule { }

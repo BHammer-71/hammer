@@ -4,13 +4,10 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 /* App Root */
 import { AppComponent } from './app.component';
 /* Routing Module */
-// import { AppRoutingModule } from './app-routing.module';
 /* Angular Modules */
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
-// import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 /* Feature modules */
-// import { FeatureHomeModule } from '@hammer/vphoa/features';
 
 import { VphoaFeatureShellModule} from '@hammer/vphoa/vphoa-feature-shell'
 
@@ -24,7 +21,7 @@ import { VphoaFeatureShellModule} from '@hammer/vphoa/vphoa-feature-shell'
     BrowserModule,
     BrowserAnimationsModule,
     VphoaFeatureShellModule,
-    // HttpClientModule,
+    HttpClientModule,
     // AppRoutingModule,
     // FeatureHomeModule,
   ],

@@ -1,4 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
 import { Contact } from '@hammer/shared/data-access';
 import { Contacts} from '@hammer/shared/data-access';
 
@@ -10,13 +12,11 @@ import { Contacts} from '@hammer/shared/data-access';
 })
 export class ContactsComponent implements OnInit {
   contacts: Contact[] = Contacts;
-  constructor() {
-    // do nothing
-  }
+  title = 'Contacts';
+  constructor(private titleService:Title) {}
 
-  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
   ngOnInit(): void {
-    // do nothing
+    this.titleService.setTitle(this.title);
   }
 
 }

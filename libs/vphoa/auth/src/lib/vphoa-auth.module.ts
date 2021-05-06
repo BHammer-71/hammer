@@ -5,7 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 
 export const vphoaAuthRoutes: Route[] = [
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: '', pathMatch: 'full', component: LoginComponent }
 ];
 
 @NgModule({

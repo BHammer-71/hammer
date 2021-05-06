@@ -1,6 +1,9 @@
-import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Message } from '@hammer/api-interfaces';
+import { Component, OnInit, VERSION } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
+// import { HttpClient } from '@angular/common/http';
+// import { Message } from '@hammer/api-interfaces';
+
 
 
 @Component({
@@ -8,7 +11,13 @@ import { Message } from '@hammer/api-interfaces';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
-  hello$ = this.http.get<Message>('/api/hello');
-  constructor(private http: HttpClient) {}
+export class HomeComponent implements OnInit {
+    public name = 'VP HOA' + VERSION.major;
+    public title = 'Village Park HOA';
+  // hello$ = this.http.get<Message>('/api/hello');
+  constructor(private titleService:Title) {}
+
+  ngOnInit(): void {
+    this.titleService.setTitle(this.title);
+  }
 }
