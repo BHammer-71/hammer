@@ -10,7 +10,7 @@ export interface Contact {
 };
 
 export interface User {
-  id?: string,
+  id?: number,
   username?: string;
   country?: string,
   password?: string,

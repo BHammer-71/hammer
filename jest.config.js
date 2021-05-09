@@ -8,5 +8,6 @@ module.exports = {
     '<rootDir>/libs/vphoa/ui',
     '<rootDir>/libs/vphoa/vphoa-feature-shell',
     '<rootDir>/libs/shared/material',
+    '<rootDir>/libs/api/users',
   ],
 };

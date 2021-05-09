@@ -26,6 +26,7 @@
     "shared-data-access": { "tags": ["scope:shared"] },
     "vphoa-ui": { "tags": ["scope:shared"] },
     "vphoa-feature-shell": { "tags": ["scope:app"] },
-    "shared-material": { "tags": ["scope:shared"] }
+    "shared-material": { "tags": ["scope:shared"] },
+    "api-users": { "tags": [] }
   }
 }
