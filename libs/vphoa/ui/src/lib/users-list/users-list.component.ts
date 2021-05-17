@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { User } from '@hammer/shared/data-access';
-import { Observable } from 'rxjs';
+// import { Observable } from 'rxjs';
 
 
 @Component({
@@ -10,5 +10,5 @@ import { Observable } from 'rxjs';
 })
 export class UsersListComponent {
   @Input()
-  users$!: Observable<User[]>;
+  users$?: User[];
 }

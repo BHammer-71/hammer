@@ -22,7 +22,7 @@ const vphoaFeatureShellRoutes: Route[] = [
 
       {
         path: 'users',
-        loadChildren: () => import('@hammer/vphoa/features').then((mod)=> mod.FeatureUsersModule),
+        loadChildren: () => import('@hammer/vphoa/features').then(mod=> mod.FeatureUsersModule),
       },
 
       {

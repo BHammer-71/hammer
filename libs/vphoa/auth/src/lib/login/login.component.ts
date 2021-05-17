@@ -10,6 +10,7 @@ export class LoginComponent {
 
   login(authenticate:unknown) {
     console.log(authenticate);
+
   }
 
 }

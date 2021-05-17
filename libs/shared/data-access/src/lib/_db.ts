@@ -1,27 +1,24 @@
 export const db = {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "duncan",
-      "country": "australia",
       "password": "123"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "sarah",
-      "country": "england",
       "password": "123"
     },
     {
-      "id": 3,
+      "id": "3",
       "username": "admin",
-      "country": "usa",
       "password": "123"
     },
     {
       "username": "test2",
       "password": "123",
-      "id": 4
+      "id": "4"
     }
   ],
   "profiles": [

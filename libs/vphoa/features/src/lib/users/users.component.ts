@@ -1,9 +1,8 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { User } from '@hammer/shared/data-access';
-import { Observable } from 'rxjs';
-import { UsersService } from './users.service'
-
+import { UsersService } from './users.service';
+// import { Observable } from 'rxjs';
 
 @Component({
   templateUrl: './users.component.html',
@@ -11,7 +10,7 @@ import { UsersService } from './users.service'
   changeDetection: ChangeDetectionStrategy.Default
 })
 export class UsersComponent implements OnInit {
-  users$: Observable<User[]>;
+  users$: User[];
   title = "Users";
   constructor(
     private titleService:Title,
@@ -19,8 +18,19 @@ export class UsersComponent implements OnInit {
      ) {}
 
   ngOnInit(): void {
+    this.getUsers();
     this.titleService.setTitle(this.title);
-    this.users$= this.usersService.getUsers();
+  }
+  getUsers(): void {
+    this.usersService.getUsers()
+     .subscribe(users => {
+       this.users$=users;
+       console.log("users.component.getUsers() returns: ",this.users$);
+     });
+
+  }
+  addUser(user: User){
+    this.usersService.addUser(user).subscribe();
   }
 
 }

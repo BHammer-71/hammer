@@ -1,0 +1,31 @@
+<form [formGroup]="userForm" novalidate (ngSubmit)="onSubmit()">
+  <mat-card class="user-card">
+    <mat-card-header>
+      <mat-card-title>User</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="User name" formControlName="username" required>
+            <mat-error *ngIf="userForm.controls['username'].hasError('required')">
+              User name is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Password" formControlName="password" required>
+            <mat-error *ngIf="userForm.controls['password'].hasError('required')">
+              Password is <strong>required</strong>. Please enter a valid password.
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" [disabled]="!userForm.valid"type="submit">Submit</button>
+    </mat-card-actions>
+  </mat-card>
+
+</form>

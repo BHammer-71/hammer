@@ -1,26 +1,47 @@
 import { Injectable } from '@nestjs/common';
-import { CreateUsersDto } from './dto/create-users-dto';
-import { UpdateUsersDto } from './dto/update-users-dto';
+import { UserRepository } from './users-repo';
+import { User } from './entities/users-entity';
+
+/**
+ * Promise Pattern:
+ * async findAll(): Promise<any[]>{
+ *  return [];
+ * }
+ *
+ * Observable Pattern:
+ * findAll(): Observable<any[]>{
+ *  return of([]);
+ * }
+ */
 
 @Injectable()
 export class UsersService {
-  create(createUsersDto: CreateUsersDto) {
-    return 'This action adds a new usersCrud';
+  constructor(
+    private readonly userRepo: UserRepository,
+  ) {}
+
+  create(user: User) {
+    return this.userRepo.create(user);
   }
 
-  findAll() {
-    return `This action returns all usersCrud`;
+  findAll(){
+    console.log("users.service.findall() started");
+    return this.userRepo.findAll();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} usersCrud`;
+  findOne(id: string) {
+    console.log("user.service.findOne() started");
+    return this.userRepo.findById(id);
   }
 
-  update(id: number, updateUsersDto: UpdateUsersDto) {
-    return `This action updates a #${id} usersCrud`;
+  update(item: User) {
+    console.log("user.service.update() started");
+    return this.userRepo.upsert(item);
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} usersCrud`;
+  remove(id: string) {
+    console.log("users.service.remove() started");
+    return this.userRepo.remove(id);
   }
+
 }
